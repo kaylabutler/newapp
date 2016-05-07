@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+.top {
+	padding-top: 5%;
+}
+
+footer {
+	padding-top: 15%;
+}
+
+.product-title {
+	text-align: center;
+	padding-bottom: 2%;
+}
+
