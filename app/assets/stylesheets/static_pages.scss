@@ -4,6 +4,10 @@
 
 .holy {
 	margin: 0 auto;
+	padding-top: 6%;
+}
+
+.carousel {
 	padding-top: 5%;
 }
 
@@ -11,3 +15,18 @@ footer {
 	text-align: center;
 }
 
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel-control.left, .carousel-control.right{ 
+background: none !important; 
+}
+
+.carousel-caption {
+	font-size: 1.2em;
+	padding-bottom: 2%;
+	text-transform: uppercase;
+
+	
+}
