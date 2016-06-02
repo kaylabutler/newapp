@@ -29,6 +29,13 @@
     </div>
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
+          <%= form_tag("/products", method:"GET", class: "navbar-form navbar-right") do %>
+        <div class="form-group">
+          <%= label_tag(:q, "Search for:", class: "hidden") %>
+          <%= text_field_tag(:q, "", placeholder: "Search", class: "form-control") %>
+          <%= submit_tag("Submit") %>
+        </div>
+        <% end %>
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "Products", "/products" %></li>
           <li><%= link_to "Contact", "/static_pages/contact" %></li>
