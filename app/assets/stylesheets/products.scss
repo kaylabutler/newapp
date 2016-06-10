@@ -2,10 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.product-title {
+.product-title,
+h1 {
 	text-align: center;
-	padding-bottom: 2%;
+	padding-bottom: 4%;
 	padding-top: 5%;
 }
-
 
