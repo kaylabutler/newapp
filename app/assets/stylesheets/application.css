@@ -16,14 +16,12 @@
 
 
 
-
 .navbar {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
 
 
-
-h1 {
-	padding-top: 5%;
+.padding {
+	padding-top: 3%;
 }
