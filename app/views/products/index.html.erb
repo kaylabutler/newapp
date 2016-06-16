@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="product-title">Rings</h1>
+<h1 class="product-title padding">Rings</h1>
 
 <div class="container-fluid">
   <div class="row">
@@ -9,7 +9,8 @@
       <%= image_tag(product.image_url, class: "img-responsive") %>
       <h1 class="product-name"><%= product.name %></h1>
       <p><%= product.description %></p>
-      <strong>$ <%= product.price %></strong>
+      <strong>$<%= product.price %></strong><br />
+      <br>
       <%= link_to 'Show', product %>
       <%= link_to 'Edit', edit_product_path(product) %>
       <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>

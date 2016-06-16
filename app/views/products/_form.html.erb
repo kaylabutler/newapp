@@ -1,3 +1,7 @@
+<div class="container padding">
+  <div class="row">
+   <div class="col-sm-6 col-md-4 col-md-offset-4">
+
 <%= form_for @product, :html => {:class => "form-horizontal"} do |f| %>
   <% if @product.errors.any? %>
     <div id="error_explanation">
@@ -11,40 +15,30 @@
     </div>
   <% end %>
   <div class="form-group">
-    <%= f.label :name, class: "col-md-4 control-label" %><br>
-    <div class="col-md-3">
+    <%= f.label :name %><br />
       <%= f.text_field :name, class: "form-control" %>
     </div>
-  </div>
   <div class="form-group">
-    <%= f.label :description, class: "col-md-4 control-label" %><br>
-  <div class="col-md-3">
+    <%= f.label :description%><br />
     <%= f.text_area :description, class: "form-control" %>
   </div>
-</div>
   <div class="form-group">
-    <%= f.label :image_url, class: "col-md-4 control-label" %><br>
-  <div class="col-md-3">
+    <%= f.label :image_url %><br />
     <%= f.text_field :image_url, class: "form-control" %>
   </div>
-  </div>
   <div class="form-group">
-  <%= f.label :colour, class: "col-md-4 control-label" %><br>
-  <div class="col-md-3">
+  <%= f.label :colour %><br />
   <%= f.text_field :colour, class: "form-control" %>
 </div>
-</div>
   <div class="form-group">
-  <%= f.label :price, class: "col-md-4 control-label" %><br>
-  <div class="col-md-3">
+  <%= f.label :price %><br />
   <%= f.text_field :price, class: "form-control" %>
 </div>
-</div>
-
-    <div class="form-group">
-    <div class="col-md-offset-4 col-md-6">
+  <div class="form-group">
     <%= f.submit "Submit", class: "btn btn-default" %>
     <%= link_to 'Back', products_path, class: "btn btn-default" %>
   </div>
+</div>
+</div>
 </div>
 <% end %>

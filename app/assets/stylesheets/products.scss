@@ -2,11 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.product-title,
-.edit-title {
+.product-title {
 	text-align: center;
 	padding-bottom: 4%;
-	padding-top: 5%;
 }
 
 .show-info {
@@ -15,4 +13,9 @@
 
 .show-objects {
 	padding-left: 2%;
+}
+
+.edit-title {
+	text-align: center;
+	padding-top: 2%;
 }
