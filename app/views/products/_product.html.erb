@@ -1,0 +1,8 @@
+<%= render @products %>
+      <div class="col-md-3 product-images">
+      <%= image_tag(product.image_url, class: "img-responsive") %>
+      <h1><%= product.name %></h1>
+      <p><%= product.description %></p>
+      <strong>$ <%= product.price %></strong>
+    </div><!-- /col -->
+<% end %>

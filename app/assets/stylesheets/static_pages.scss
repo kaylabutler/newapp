@@ -1,0 +1,27 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.carousel {
+	padding-top: 5%;
+}
+
+footer {
+	text-align: center;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel-control.left, .carousel-control.right{ 
+background: none !important; 
+}
+
+.carousel-caption {
+	font-size: 1.2em;
+	padding-bottom: 2%;
+	text-transform: uppercase;
+
+	
+}
