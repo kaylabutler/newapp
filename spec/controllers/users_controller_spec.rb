@@ -3,8 +3,10 @@ require 'rails_helper'
 describe UsersController, :type => :controller do
   
   before do
-    @user1 = User.create!(email: "potato2@example.com", password: "123456")
-    @user2 = User.create!(email: "kartofel1@example.com", password: "1234567")
+  	@user1 = FactoryGirl.build(:user)
+  	@user2 = FactoryGirl.build(:user)
+    #@user1 = User.create!(email: "potato2@example.com", password: "123456")
+    #@user2 = User.create!(email: "kartofel1@example.com", password: "1234567")
   end
 
 describe "GET #show" do
@@ -15,9 +17,10 @@ describe "GET #show" do
 
     it "loads correct user details"   do
       get :show, id: @user1.id
+      expect(response).to have_http_status(200)
       expect(assigns(:user)).to eq @user1
     end
-  end
+ 
 
   context "No user is logged in" do
     it "redirects to login" do
@@ -34,3 +37,4 @@ describe "GET #show" do
       end
     end
   end
+end
