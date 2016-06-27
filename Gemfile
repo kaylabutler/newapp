@@ -16,6 +16,8 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 
+gem 'nokogiri', '>=1.6.8.rc3'
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -54,6 +56,10 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  gem 'guard'
+  gem 'guard-rspec', require: false
+  gem 'spork-rails'
+  gem 'guard-spork'
 end
 
 group :production do
